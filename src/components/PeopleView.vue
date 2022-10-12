@@ -1,5 +1,6 @@
 <script setup>
-import {store, getGrandTotal } from "../store/store";
+import {store, getGrandTotal} from "../store/store";
+
 
 </script>
 
@@ -10,9 +11,8 @@ import {store, getGrandTotal } from "../store/store";
     <div class="people-view" v-if="store.people.length > 0">
         <div class="header">
             <div>
-                <div>
-                    {{ getGrandTotal() }}
-                </div>
+                <div>{{ getGrandTotal() }}</div>
+                <div>{{ store.params.remaining }}</div>
             </div>
         </div>
     </div>

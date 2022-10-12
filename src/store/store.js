@@ -11,7 +11,7 @@ export const store = reactive({
     ],
 });
 
-function getGrandTotal() {
+export function getGrandTotal() {
     return store.params.total * (store.params.tip / 100 + 1);
 }
 
