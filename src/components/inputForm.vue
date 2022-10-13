@@ -23,12 +23,12 @@ function handleSubmit(){
         </div>
 
         <div>
-            <lavel for="tip">tip %</lavel>
+            <lavel for="tip">Tip %</lavel>
             <input type="numer" required v-model="tip" />
         </div>
 
         <div>
-            <lavel for="people">people</lavel>
+            <lavel for="people">People</lavel>
             <input type="numer" required v-model="people" />
         </div>
         <div>

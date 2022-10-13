@@ -1,5 +1,6 @@
 <script setup>
 import {store, getGrandTotal} from "../store/store";
+import Label from "./Label.vue";
 
 
 </script>
@@ -11,9 +12,14 @@ import {store, getGrandTotal} from "../store/store";
     <div class="people-view" v-if="store.people.length > 0">
         <div class="header">
             <div>
-                <div>{{ getGrandTotal() }}</div>
-                <div>{{ store.params.remaining }}</div>
+                <Label title=" Total + Tip: " :value="getGrandTotal()" />
             </div>
+            <div>
+                <Label title=" Remaining: " :value="store.params.remaining"  /> 
+            </div>
+        </div>
+        <div class="people-container">
+            <div v-for="person in store.people" :key="person.id"> {{person.totalPerPerson}} </div>
         </div>
     </div>
 </template>
