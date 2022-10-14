@@ -29,7 +29,7 @@ function handleChange(e){
         </div>
 
         <div class="paid">
-            <input type="checkbox" name="" id="" @change="handleChange"/> paid
+            <input type="checkbox" name="" id="" @change="handleChange"/> Paid
         </div>
     </div>
 
