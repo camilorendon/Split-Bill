@@ -20,10 +20,14 @@ import Person from "./Person.vue";
             </div>
         </div>
         <div class="people-container">
-            <div v-for="person in store.people" :key="person.id"> 
-                <Person id="person.id" :number-of-person="numberOfPerson" :totalperperson="person.totalPerPerson" :paid="person.paid" />
-
-            </div>
+        <Person v-for="person in store.people"
+            :key="person.id"
+            :id="person.id"
+            :number-of-person="person.numberOfPerson"
+            :paid="person.paid" />
+        </div>
+        <div>
+            <Person title="parte" :value="person.totalPerPerson"/>
         </div>
     </div>
 </template>
