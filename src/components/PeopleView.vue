@@ -24,7 +24,7 @@ import Person from "./Person.vue";
             :key="person.id"
             :id="person.id"
             :number-of-person="person.numberOfPerson"
-            {{person.totalPerPerson}}
+            :total-per-person="person.totalPerPerson"
             :paid="person.paid" />
         </div>
     </div>
