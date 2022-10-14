@@ -24,10 +24,8 @@ import Person from "./Person.vue";
             :key="person.id"
             :id="person.id"
             :number-of-person="person.numberOfPerson"
+            :total-per-person="person.totalPerPerson"
             :paid="person.paid" />
-        </div>
-        <div>
-            <Person title="parte" :value="person.totalPerPerson"/>
         </div>
     </div>
 </template>
