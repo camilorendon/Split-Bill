@@ -30,4 +30,40 @@ import Person from "./Person.vue";
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.no-items{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.people-view{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.people-container{
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.header{
+    color: white;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    flex-direction: column;
+}
+</style>
