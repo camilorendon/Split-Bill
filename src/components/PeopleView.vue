@@ -16,15 +16,15 @@ import Person from "./Person.vue";
                 <Label title=" Total + Tip: " :value="getGrandTotal()" />
             </div>
             <div>
-                <Label title=" Remaining: " :value="store.params.remaining"  />
+                <Label title=" Remaining: " :value="store.params.remaining"  /> 
             </div>
         </div>
         <div class="people-container">
-        <Person v-for="person in store.people"
+        <Person v-for="person in store.people" 
             :key="person.id"
-            :id="person.id"
-            :number-of-person="person.numberOfPerson"
-            :total-per-person="person.totalPerPerson"
+            :id="person.id" 
+            :number-of-person="person.numberOfPerson" 
+            :total-perperson="person.totalPerperson"  
             :paid="person.paid" />
         </div>
     </div>
