@@ -16,7 +16,7 @@ import Person from "./Person.vue";
                 <Label title=" Total + Tip: " :value="getGrandTotal()" />
             </div>
             <div>
-                <Label title=" Remaining: " :value="store.params.remaining"  /> 
+                <Label title=" Remaining: " :value="store.params.remaining"  />
             </div>
         </div>
         <div class="people-container">
@@ -24,7 +24,7 @@ import Person from "./Person.vue";
             :key="person.id"
             :id="person.id"
             :number-of-person="person.numberOfPerson"
-            :total-per-person="person.props.totalPerPerson"
+            :total-per-person="person.totalPerPerson"
             :paid="person.paid" />
         </div>
     </div>
