@@ -2,7 +2,7 @@
 import {defineProps, ref} from 'vue';
 import { pay} from "../store/store"
 
-const props = defineProps(['id', 'numberOfPerson', 'totalPerperson', 'Paid']);
+const props = defineProps(["id", "numberOfPerson", "totalPerPerson", "Paid"]);
 let paid = ref(false);
 
 function handleChange(e){
@@ -18,12 +18,12 @@ function handleChange(e){
     <div :class="['person', props.paid ? 'person-paid' : 'person-no-paid']">
         <div class="person-number">Person {{props.numberOfPerson}}  </div>
         <div class="person-to-pay">
-                {{
-                        new Intl.NumberFormat('en-Us', {
-                            style: "currency",
-                            currency: "USD",
-                    }).format(props.totalPerPerson)
-                }}
+            {{
+                new Intl.NumberFormat('en-Us', {
+                        style: "currency",
+                        currency: "USD",
+                }).format(props.totalPerPerson)
+            }}
         </div>
 
         <div class="paid">
