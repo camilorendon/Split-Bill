@@ -7,7 +7,6 @@ let paid = ref(false);
 
 function handleChange(e){
     paid = e.target.checked;
-
     pay(props.id, paid)
 }
 
@@ -15,6 +14,7 @@ function handleChange(e){
 </script>
 
 <template>
+
     <div :class="['person', props.paid ? 'person-paid' : 'person-no-paid']">
         <div class="person-number">Person {{props.numberOfPerson}}  </div>
         <div class="person-to-pay">
@@ -23,9 +23,8 @@ function handleChange(e){
                         style: "currency",
                         currency: "USD",
                 }).format(props.totalPerPerson)
-            }}
+            }}
         </div>
-
         <div class="paid">
             <input type="checkbox" name="" id="" @change="handleChange"/> Paid
         </div>
