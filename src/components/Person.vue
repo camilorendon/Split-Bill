@@ -1,5 +1,5 @@
 <script setup>
-import {defineProps, ref} from 'vue';
+import { ref} from 'vue';
 import { pay} from "../store/store"
 
 const props = defineProps(["id", "numberOfPerson", "totalPerPerson", "Paid"]);
