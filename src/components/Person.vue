@@ -42,7 +42,7 @@ function handleChange(e){
     overflow: hidden;
 }
 
-.person-paid{
+.person-to-paid{
     border: solid 3px yellowgreen;
 }
 .person-no-paid{

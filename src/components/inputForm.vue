@@ -15,28 +15,25 @@ function handleSubmit(){
 </script>
 
 <template>
-   <form action="" @submit.prevent="handleSubmit">
-    <div class="form-container">
-        <div>
-            <lavel for="total">Total</lavel>
-            <input type="numer" required v-model="total" />
+    <form action="" @submit.prevent="handleSubmit">
+        <div class="form-container">
+            <div>
+                <lavel for="total">Total</lavel>
+                <input type="numer" required v-model="total" />
+            </div>
+            <div>
+                <lavel for="tip">Tip %</lavel>
+                <input type="numer" required v-model="tip" />
+            </div>
+            <div>
+                <lavel for="people">People</lavel>
+                <input type="numer" required v-model="people" />
+            </div>
+            <div>
+                <input type="submit" value="calculate"/>
+            </div>
         </div>
-
-        <div>
-            <lavel for="tip">Tip %</lavel>
-            <input type="numer" required v-model="tip" />
-        </div>
-
-        <div>
-            <lavel for="people">People</lavel>
-            <input type="numer" required v-model="people" />
-        </div>
-        <div>
-            <input type="submit" value="calculate"/>
-        </div>
-
-    </div>
-   </form>
+    </form>
 </template>
 
 <style scoped>
@@ -52,14 +49,14 @@ form{
 }
 
 .form-container{
-    width: 100%;
-    display: flex;
+    width: 400%;
+    display:flex;
     flex-direction: column;
     gap: 20px;
 }
 
 form label{
-    display: block;
+    display: flex;
 }
 
 form input{

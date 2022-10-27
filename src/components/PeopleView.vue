@@ -49,10 +49,10 @@ import Person from "./Person.vue";
 }
 
 .people-container{
-    width: 800px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 900px;
+    margin: top;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: auto;
     gap: 10px;
 }
