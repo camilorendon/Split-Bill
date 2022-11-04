@@ -12,7 +12,7 @@ import Person from "./Person.vue";
     </div>
     <div class="people-view" v-if="store.people.length > 0">
         <div class="header">
-            <div type="title"> SPLIT BILL.</div>
+            <div type="title"> CUENTA DIVIDIDA.</div>
             <div>
                 <Label title=" Total + Tip: " :value="getGrandTotal()" />
             </div>
